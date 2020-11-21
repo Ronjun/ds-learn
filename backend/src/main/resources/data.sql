@@ -17,3 +17,7 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_uri) VALUES ('Bootcamp Angular.js
 
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-07-13T03:00:00Z', 1);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-12-13T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-12-13T03:00:00Z', 1);
+
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('trilha angular','trilha principal',1,'naosei.jpg',1, 1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('forum','tira duvidas',2,'naosei.jpg',2, 1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('lives','bonus da turma',3,'naosei.jpg',0, 1);
