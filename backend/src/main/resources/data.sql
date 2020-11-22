@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0
 INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('trilha angular','trilha principal',1,'naosei.jpg',1, 1);
 INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('forum','tira duvidas',2,'naosei.jpg',2, 1);
 INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('lives','bonus da turma',3,'naosei.jpg',0, 1);
+
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap1', 'inicio do bootcamp', 1, 'aster', 1, null);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap2', 'segunda parte do bootcamp', 2, 'multiseat', 1, 1);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap3', 'terceira parte do bootcamp', 3, '2terminal', 1, 2);
