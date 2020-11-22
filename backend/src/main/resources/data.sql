@@ -25,3 +25,6 @@ INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) 
 INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap1', 'inicio do bootcamp', 1, 'aster', 1, null);
 INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap2', 'segunda parte do bootcamp', 2, 'multiseat', 1, 1);
 INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('cap3', 'terceira parte do bootcamp', 3, '2terminal', 1, 2);
+
+INSERT INTO tb_enrollment (enroll_moment, refund_moment, available, only_update, offer_id, user_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z', null, true, false, 1, 1);
+INSERT INTO tb_enrollment (enroll_moment, refund_moment, available, only_update, offer_id, user_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z', null, true, false, 1, 2);
