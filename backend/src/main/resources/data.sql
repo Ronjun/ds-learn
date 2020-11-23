@@ -28,3 +28,19 @@ INSERT INTO tb_section (title, description, position, img_uri, resource_id, prer
 
 INSERT INTO tb_enrollment (enroll_moment, refund_moment, available, only_update, offer_id, user_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z', null, true, false, 1, 1);
 INSERT INTO tb_enrollment (enroll_moment, refund_moment, available, only_update, offer_id, user_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z', null, true, false, 1, 2);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 1 cap 1', 1, 1);
+INSERT INTO TB_CONTENT (TEXT_CONTENT, VIDEO_URI, ID) VALUES ('material de apoio: null','endereço do video', 1);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 2 cap 1', 2, 1);
+INSERT INTO TB_CONTENT (TEXT_CONTENT, VIDEO_URI, ID) VALUES ('material de apoio: null','endereço do video', 2);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 3 cap 1', 3, 1);
+INSERT INTO TB_CONTENT (TEXT_CONTENT, VIDEO_URI, ID) VALUES ('material de apoio: null','endereço do video', 3);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('TAREFA 1 cap 1', 4, 1);
+INSERT INTO TB_TASK (id, description, question_count, approval_count, weight, due_date) VALUES (4,'material de apoio: null', 1, 1, 1.0, TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z');
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('TAREFA 2 cap 1', 5, 1);
+INSERT INTO TB_TASK (id, description, question_count, approval_count, weight, due_date) VALUES (5,'material de apoio: null', 1, 1, 1.0, TIMESTAMP WITH TIME ZONE '2020-07-13T03:00:00Z');
+
+INSERT INTO TB_LESSONS_DONE(LESSON_ID, USER_ID, OFFER_ID) VALUES (1, 1, 1);
+INSERT INTO TB_LESSONS_DONE(LESSON_ID, USER_ID, OFFER_ID) VALUES (2, 1, 1);
+INSERT INTO TB_LESSONS_DONE(LESSON_ID, USER_ID, OFFER_ID) VALUES (3, 1, 1);
